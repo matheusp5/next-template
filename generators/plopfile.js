@@ -16,7 +16,7 @@ module.exports = function (plop) {
     actions: [
       {
         type: 'add',
-        path: 'src/app/{{route}}/page.tsx',
+        path: __dirname + '/../src/app/{{route}}/page.tsx',
         templateFile: 'templates/page.handlebars',
         force: true,
       },
@@ -28,8 +28,8 @@ module.exports = function (plop) {
     actions: [
       {
         type: 'add',
-        path: 'src/app/api/auth/[...nextauth]/route.ts',
-        templateFile: 'templates/authRoute.ts',
+        path: __dirname + '/../src/app/api/auth/[...nextauth]/route.ts',
+        templateFile: 'templates/auth.handlebars',
         force: true,
       },
     ],
