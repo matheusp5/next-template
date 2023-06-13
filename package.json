@@ -3,22 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start:dev": "next dev",
+    "start:build": "next build",
+    "start:publish": "next start",
+    "lint": "next lint",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "test" : "jest"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.59.11",
-    "@typescript-eslint/parser": "^5.59.11",
     "animate.css": "^4.1.1",
     "autoprefixer": "10.4.14",
     "axios": "^1.4.0",
     "dayjs": "^1.11.8",
-    "eslint": "8.42.0",
-    "eslint-config-next": "13.4.5",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1",
     "next": "13.4.5",
     "next-auth": "^4.22.1",
     "postcss": "8.4.24",
@@ -40,6 +36,12 @@
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
     "@types/react-dom": "18.2.5",
-    "jest": "^29.5.0"
+    "@typescript-eslint/eslint-plugin": "^5.59.11",
+    "@typescript-eslint/parser": "^5.59.11",
+    "jest": "^29.5.0",
+    "eslint": "8.42.0",
+    "eslint-config-next": "13.4.5",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1"
   }
 }
