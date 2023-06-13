@@ -22,4 +22,16 @@ module.exports = function (plop) {
       },
     ],
   });
+  plop.setGenerator('auth', {
+    description: 'Gerar estrutura para autenticação',
+    prompts: [],
+    actions: [
+      {
+        type: 'add',
+        path: 'src/app/api/auth/[...nextauth]/route.ts',
+        templateFile: 'templates/authRoute.ts',
+        force: true,
+      },
+    ],
+  });
 };
